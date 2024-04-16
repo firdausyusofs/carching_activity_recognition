@@ -20,11 +20,11 @@ class FlutterActivityRecognitionPlugin: FlutterPlugin, ActivityAware {
   }
 
   override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-    if (::methodCallHandler.isInitialized)
-      methodCallHandler.stopListening()
-
-    if (::streamHandler.isInitialized)
-      streamHandler.stopListening()
+//    if (::methodCallHandler.isInitialized)
+//      methodCallHandler.stopListening()
+//
+//    if (::streamHandler.isInitialized)
+//      streamHandler.stopListening()
   }
 
   override fun onAttachedToActivity(binding: ActivityPluginBinding) {

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:developer' as dev;
 
+import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_activity_recognition/flutter_activity_recognition.dart';
 
@@ -17,6 +18,11 @@ class _ExampleAppState extends State<ExampleApp> {
 
   void _onActivityReceive(Activity activity) {
     dev.log('Activity Detected >> ${activity.toJson()}');
+    AwesomeNotifications().createNotification(
+        content: NotificationContent(id: 3,
+            channelKey: "carching_channel",
+            title: "Activity Detected",
+            body: "Activity recognition detected: " + activity.toJson().toString()));
     _activityStreamController.sink.add(activity);
   }
 
@@ -27,6 +33,25 @@ class _ExampleAppState extends State<ExampleApp> {
   @override
   void initState() {
     super.initState();
+
+    AwesomeNotifications().initialize(
+      null,
+        [
+        NotificationChannel(
+            channelGroupKey: 'carching_channel_group',
+            channelKey: 'carching_channel',
+            channelName: 'carching notifications',
+            channelDescription: 'Carching Notification channel',
+            defaultColor: Color(0xFF9D50DD),
+            ledColor: Colors.white)
+      ],
+      channelGroups: [
+        NotificationChannelGroup(
+            channelGroupKey: 'basic_channel_group',
+            channelGroupName: 'Basic group')
+      ]
+    );
+
     WidgetsBinding.instance?.addPostFrameCallback((_) async {
       final activityRecognition = FlutterActivityRecognition.instance;
 
