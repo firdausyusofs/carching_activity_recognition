@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pravera.flutter_activity_recognition">
+    package="co.carching.flutter_activity_recognition">
     <application>
         <receiver
             android:name=".service.ActivityRecognitionIntentReceiver"

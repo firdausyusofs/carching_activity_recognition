@@ -1,4 +1,4 @@
-package com.pravera.flutter_activity_recognition.service
+package co.carching.flutter_activity_recognition.service
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -8,9 +8,9 @@ import android.content.pm.PackageManager
 import android.os.Build
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.pravera.flutter_activity_recognition.Constants
-import com.pravera.flutter_activity_recognition.errors.ErrorCodes
-import com.pravera.flutter_activity_recognition.models.PermissionRequestResult
+import co.carching.flutter_activity_recognition.Constants
+import co.carching.flutter_activity_recognition.errors.ErrorCodes
+import co.carching.flutter_activity_recognition.models.PermissionRequestResult
 import io.flutter.plugin.common.PluginRegistry
 
 class PermissionManager: PluginRegistry.RequestPermissionsResultListener {

@@ -1,4 +1,4 @@
-package com.pravera.flutter_activity_recognition.models
+package co.carching.flutter_activity_recognition.models
 
 import com.google.gson.annotations.SerializedName
 

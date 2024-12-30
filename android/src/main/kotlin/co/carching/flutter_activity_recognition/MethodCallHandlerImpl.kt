@@ -1,12 +1,12 @@
-package com.pravera.flutter_activity_recognition
+package co.carching.flutter_activity_recognition
 
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import androidx.annotation.NonNull
-import com.pravera.flutter_activity_recognition.errors.ErrorCodes
-import com.pravera.flutter_activity_recognition.service.PermissionManager
+import co.carching.flutter_activity_recognition.errors.ErrorCodes
+import co.carching.flutter_activity_recognition.service.PermissionManager
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 
 import io.flutter.plugin.common.BinaryMessenger

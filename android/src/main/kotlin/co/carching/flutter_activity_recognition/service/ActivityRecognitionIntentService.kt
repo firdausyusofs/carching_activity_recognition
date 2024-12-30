@@ -1,14 +1,14 @@
-package com.pravera.flutter_activity_recognition.service
+package co.carching.flutter_activity_recognition.service
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.app.JobIntentService
 import com.google.android.gms.location.ActivityRecognitionResult
 import com.google.gson.Gson
-import com.pravera.flutter_activity_recognition.Constants
-import com.pravera.flutter_activity_recognition.errors.ErrorCodes
-import com.pravera.flutter_activity_recognition.models.ActivityData
-import com.pravera.flutter_activity_recognition.utils.ActivityRecognitionUtils
+import co.carching.flutter_activity_recognition.Constants
+import co.carching.flutter_activity_recognition.errors.ErrorCodes
+import co.carching.flutter_activity_recognition.models.ActivityData
+import co.carching.flutter_activity_recognition.utils.ActivityRecognitionUtils
 
 class ActivityRecognitionIntentService: JobIntentService() {
 	companion object {

@@ -1,4 +1,4 @@
-package com.pravera.flutter_activity_recognition.service
+package co.carching.flutter_activity_recognition.service
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
@@ -8,8 +8,8 @@ import android.content.SharedPreferences
 import android.os.Build
 import android.util.Log
 import com.google.android.gms.location.*
-import com.pravera.flutter_activity_recognition.Constants
-import com.pravera.flutter_activity_recognition.errors.ErrorCodes
+import co.carching.flutter_activity_recognition.Constants
+import co.carching.flutter_activity_recognition.errors.ErrorCodes
 
 class ActivityRecognitionManager: SharedPreferences.OnSharedPreferenceChangeListener {
 	companion object {
@@ -95,7 +95,7 @@ class ActivityRecognitionManager: SharedPreferences.OnSharedPreferenceChangeList
 		}
 	}
 
-	override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences, key: String) {
+	override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences, key: String?) {
 		when (key) {
 			Constants.ACTIVITY_DATA_PREFS_KEY -> {
 				val data = sharedPreferences.getString(key, null) ?: return

@@ -33,7 +33,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.pravera.flutter_activity_recognition_example"
+        applicationId "co.carching.flutter_activity_recognition_example"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode flutterVersionCode.toInteger()

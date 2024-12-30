@@ -1,4 +1,4 @@
-package com.pravera.flutter_activity_recognition.utils
+package co.carching.flutter_activity_recognition.utils
 
 import com.google.android.gms.location.DetectedActivity
 

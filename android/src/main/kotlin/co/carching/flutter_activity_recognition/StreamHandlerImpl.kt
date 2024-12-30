@@ -1,9 +1,9 @@
-package com.pravera.flutter_activity_recognition
+package co.carching.flutter_activity_recognition
 
 import android.app.Activity
 import android.content.Context
-import com.pravera.flutter_activity_recognition.errors.ErrorCodes
-import com.pravera.flutter_activity_recognition.service.ActivityRecognitionManager
+import co.carching.flutter_activity_recognition.errors.ErrorCodes
+import co.carching.flutter_activity_recognition.service.ActivityRecognitionManager
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.EventChannel
 

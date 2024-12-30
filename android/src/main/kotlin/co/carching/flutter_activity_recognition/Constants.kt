@@ -1,4 +1,4 @@
-package com.pravera.flutter_activity_recognition
+package co.carching.flutter_activity_recognition
 
 class Constants {
 	companion object {
